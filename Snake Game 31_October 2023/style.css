@@ -16,6 +16,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+#scoreBox{
+  position: absolute;
+  top: 9px;
+  right: 235px;
+  font-size: 39px;
+  font-weight: bold;
+  /* font-family: Kanit; */
+  font-family: Griffy;
+}
 #board {
   height: 92vmin;
   width: 92vmin;
