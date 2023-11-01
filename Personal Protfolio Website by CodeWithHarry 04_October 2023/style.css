@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@400;500&family=Source+Code+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+.sidebar {
+  position: absolute;
+  background-color: #272b26;
+  color: white;
+  /* width: 434px; */
+  height: 100vh;
+  font-family: "Kanit", sans-serif;
+  padding-bottom: 250px;
+  transition: transform 0.3s ease-in;
+}
+.sidebar nav {
+  padding: 45px;
+}
+.sidebar nav li {
+  list-style: none;
+  font-size: 30px;
+  padding: 35px 0;
+}
+.sidebar nav li a {
+  text-decoration: none;
+  color: white;
+}
+.main {
+  /* background-color: #2e362a; */
+  /* color: white; */
+  width: 85vw;
+}
+.container {
+  display: flex;
+}
+.infocontainer {
+  /* background-color: #777977; */
+  width: 80vw;
+  height: 55vh;
+  margin: 147px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.devpic img {
+  height: 55vh;
+}
+.devinfo {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Source Code Pro", monospace;
+}
+.hello {
+  font-size: 3em;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+}
+
+.about {
+  font-size: 2.5em;
+}
+.moreabout {
+  font-size: 2em;
+  font-family: "Kanit", sans-serif;
+  margin-top: 25px;
+}
+.buttons {
+  margin-top: 2.2em;
+  font-size: 16px;
+}
+.buttons button {
+  background-color: #fca50d;
+  padding: 9px 14px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 3px 3px;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: #0dc4fc;
+}
+.sidebarGo {
+  transform: translate(-443px, 8px);
+  position: absolute;
+}
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+.ham{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.cross {
+  margin-left: 185px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1250px) {
+  .devpic {
+    display: none;
+  }
+  .intro , .contactform , .Blogcontainer {
+      margin: 8px;
+  }
+  .devinfo {
+    font-size: 10px;
+  }
+  .buttons{
+    font-size: 5px;
+  }
+}

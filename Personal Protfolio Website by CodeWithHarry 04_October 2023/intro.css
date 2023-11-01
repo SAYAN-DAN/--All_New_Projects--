@@ -1,0 +1,43 @@
+
+.introbgc {
+    background-color: rgb(170, 172, 172);
+    /* background-color: rgb(32, 62, 65); */
+}
+.intro {
+  margin: 70px;
+  padding: 100px 100px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    /* font-family: "Kanit", sans-serif; */
+    margin: 12px;
+  }
+  .intro h2 {
+    font-family: "Source Code Pro", monospace;
+    margin: 10px;
+  }
+  .skillcontainer {
+    padding: 12px;
+  }
+  .skillItem {
+    display: flex;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+  }
+  .skill {
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+  }
+  .hundred {
+    width: 500px;
+    background-color: green;
+  }
+  .fifty {
+    width: 400px;
+    background-color: yellow;
+  }
+  .t20 {
+    width: 300px;
+  }
