@@ -18,10 +18,28 @@ body {
 }
 .elem {
   width: 100%;
-  height: 100px;
+  height: 150px;
   border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .elem h1 {
-  font-size: 4vw;
+  font-size: 5vw;
   text-transform: uppercase;
+  position: relative;
+  z-index: 9;
+  mix-blend-mode: difference;
+}
+.elem img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  opacity: 0;
+  transition: all linear 0.3s;
 }
