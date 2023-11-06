@@ -25,6 +25,15 @@ body {
   /* font-family: Kanit; */
   font-family: Griffy;
 }
+#hiscoreBox{
+  position: absolute;
+  top: 60px;
+  right: 187px;
+  font-size: 39px;
+  font-weight: bold;
+  /* font-family: Kanit; */
+  font-family: Griffy;
+}
 #board {
   height: 92vmin;
   width: 92vmin;

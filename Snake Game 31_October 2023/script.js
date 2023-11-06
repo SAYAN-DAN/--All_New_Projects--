@@ -54,8 +54,15 @@ function gameEngine() {
   // If you have eaten the food, increment the score and regenerate the food
   if (snakeArr[0].y === food.y && snakeArr[0].x === food.x) {
     foodSound.play();
-    score += 1
-    scoreBox.innerHTML = "score: " + score
+    score += 1;
+    if (score > hiscoreval) {
+      hiscoreval = score;
+      localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
+        // Update the high score display
+      hiscoreBox.innerHTML = "Hi Score = " + hiscoreval;
+    }
+        // Update the score display
+    scoreBox.innerHTML = "score: " + score;
     snakeArr.unshift({
       x: snakeArr[0].x + inputDir.x,
       y: snakeArr[0].y + inputDir.y,
@@ -106,9 +113,22 @@ function gameEngine() {
 }
 
 // Game logic starts here
+musicSound.play();
 
+// Get the high score from local storage or set it to 0 if not available
+let hiscore = localStorage.getItem("hiscore");
+if (hiscore === null) {
+  hiscoreval = 0;
+  localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
+} else {
+  hiscoreval = JSON.parse(hiscore);
+   // Update the high score display
+  hiscoreBox.innerHTML = "Hi Score = " + hiscore;
+}
+// Start the game loop
 window.requestAnimationFrame(main);
 
+// Listen for key events to control the snake
 window.addEventListener("keydown", (e) => {
   moveSound.play();
   switch (e.key) {
