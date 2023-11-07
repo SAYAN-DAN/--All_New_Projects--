@@ -1,9 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Alfa+Slab+One&family=Encode+Sans+SC:wght@900&family=Kanit:ital,wght@1,100&family=Monoton&family=Nosifer&family=Noto+Color+Emoji&family=Noto+Sans:wght@100&family=Open+Sans:ital,wght@1,300;1,400&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300;1,400;1,500;1,900&family=Sometype+Mono&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;1,200&family=Ubuntu:wght@300&family=Young+Serif&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
-  color: #fff;
 }
 html,
 body {
@@ -17,18 +16,67 @@ nav ul {
   font-family: Griffy;
   list-style-type: none;
   height: 65px;
+  color: #fff;
   background-color: rgb(58, 58, 58);
 }
 nav ul li {
-    padding: 0 12px;
+  padding: 0 12px;
 }
 #brand img {
   width: 40px;
   padding-right: 7px;
 }
 #brand {
-    display: flex;
-    align-items: center;
-    font-family: Anton;
-    font-size: 23px;
+  display: flex;
+  align-items: center;
+  font-family: Anton;
+  font-size: 23px;
+}
+#container {
+  min-height: 74vh;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  margin: 25px auto;
+  width: 80%;
+  background-color: rgb(109, 71, 147);
+  padding: 34px;
+  border-radius: 12px;
+  background-image: url(bg.jpg);
+  object-fit: cover;
+  object-position: center;
+}
+#songItem {
+  height: 50px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  margin: 12px 0;
+  color: #111;
+}
+#songItem img {
+  width: 43px;
+  margin: 0 12px;
+}
+#button {
+  position: sticky;
+  height: 100px;
+  background-color: black;
+  color: #fff;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#myProgressBar {
+  width: 80vw;
+}
+#icons i {
+  font-size: 30px;
+  margin: 16px 10px;
+  cursor: pointer;
 }
