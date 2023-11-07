@@ -48,18 +48,30 @@ nav ul li {
 }
 #songItem {
   height: 50px;
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: antiquewhite;
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 12px 0;
   color: #111;
 }
 #songItem img {
   width: 43px;
   margin: 0 12px;
+  text-align: center;
+  border-radius: 50%;
+}
+#timestam {
+  margin: 0 12px;
+}
+.playbtn {
+  font-size: 20px;
+  cursor: pointer;
+}
+#songItemContainer {
+  margin-top: 75px;
 }
 #button {
   position: sticky;
@@ -74,9 +86,21 @@ nav ul li {
 }
 #myProgressBar {
   width: 80vw;
+  cursor: pointer;
 }
 #icons i {
   font-size: 30px;
   margin: 16px 10px;
   cursor: pointer;
+}
+#songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: kenit;
+  font-size: 20px;
+}
+#songInfo img {
+  width: 42px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
 }
