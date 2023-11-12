@@ -39,6 +39,7 @@ const checkWin = function () {
       document.querySelector(
         "#line"
       ).style.transform = `translate(${e[3]}vw , ${e[4]}vw) rotate(${e[5]}deg)`;
+      document.querySelector("#line").style.width = "20vw";
     }
   });
 };
@@ -70,6 +71,7 @@ reset.addEventListener("click", function () {
   });
   ting = "X";
   gameover1 = false;
+  document.querySelector("#line").style.width = "0vw";
   document.getElementsByClassName("info")[0].innerText = "Turn for" + ting;
   document.querySelector("#imgbox").getElementsByTagName("img")[0].style.width =
     "0px";

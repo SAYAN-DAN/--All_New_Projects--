@@ -83,23 +83,23 @@ nav ul {
 }
 #line {
   height: 3px;
-  width: 20vw;
-  background-color: black;
+  width: 0;
+  background-color: rgb(120, 5, 5);
   position: absolute;
+  transition: width 1s ease-in-out;
 }
 
-@media screen and (max-width: 950px)
-{
+@media screen and (max-width: 950px) {
   #gameContainer {
     flex-wrap: wrap;
   }
-  #gameInfo{
+  #gameInfo {
     margin-top: 34px;
   }
   #gameInfo h1 {
     font-size: 1.5rem;
   }
-  #container { 
+  #container {
     grid-template-columns: repeat(3, 20vw);
     grid-template-rows: repeat(3, 20vw);
   }
