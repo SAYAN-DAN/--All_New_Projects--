@@ -39,17 +39,32 @@ function locomotiveAnimation() {
 }
 locomotiveAnimation();
 
-gsap.to(".nav-1 svg", {
-  transform: "translateY(-100%)",
-  ScrollTrigger: {
-    trigger: "#page1",
-    scroller: "#main",
-    markers: true,
-    start: "top 0",
-    end: "top -5%",
-    scrub: true,
-  },
-});
+function navbarAnimation() {
+  gsap.to(".nav .nav-1 svg", {
+    transform: "translateY(-100%)",
+    scrollTrigger: {
+      trigger: "#page1",
+      scroller: "#main",
+      // markers: true,
+      start: "top 0",
+      end: "top -5%",
+      scrub: true,
+    },
+  });
+  gsap.to(".nav-2 .links", {
+    transform: "translateY(-100%)",
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#page1",
+      scroller: "#main",
+      // markers: true,
+      start: "top 0",
+      end: "top -5%",
+      scrub: true,
+    },
+  });
+}
+navbarAnimation();
 
 // const scroll = new LocomotiveScroll({
 //   el: document.querySelector("#main"),
@@ -97,22 +112,25 @@ function loadinganimation() {
 }
 loadinganimation();
 
-document.addEventListener("mousemove", function (dets) {
-  gsap.to("#cursor", {
-    left: dets.x,
-    top: dets.y,
+function cursorAnimation() { 
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#cursor", {
+      left: dets.x,
+      top: dets.y,
+    });
   });
-});
 
-document.querySelectorAll(".child").forEach(function (elem) {
-  elem.addEventListener("mouseenter", function () {
-    gsap.to("#cursor", {
-      transform: "translate(-50%,-50%) scale(1)",
+  document.querySelectorAll(".child").forEach(function (elem) {
+    elem.addEventListener("mouseenter", function () {
+      gsap.to("#cursor", {
+        transform: "translate(-50%,-50%) scale(1)",
+      });
+    });
+    elem.addEventListener("mouseleave", function () {
+      gsap.to("#cursor", {
+        transform: "translate(-50%,-50%) scale(0)",
+      });
     });
   });
-  elem.addEventListener("mouseleave", function () {
-    gsap.to("#cursor", {
-      transform: "translate(-50%,-50%) scale(0)",
-    });
-  });
-});
+}
+cursorAnimation();
