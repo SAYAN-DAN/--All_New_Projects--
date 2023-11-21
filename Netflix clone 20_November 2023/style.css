@@ -31,13 +31,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 80vw;
+  max-width: 75vw;
   margin: auto;
-  height: 62px;
+  height: 100px;
   /* background-color: red; */
 }
 nav img {
-  width: 124px;
+  width: 150px;
   position: relative;
   z-index: 30;
 }
@@ -46,7 +46,7 @@ nav button {
   z-index: 30;
 }
 #hero {
-  height: calc(100% - 62px);
+  height: calc(100% - 100px);
   display: flex;
   flex-direction: column;
   /* font-family: Netflix Sans; */
@@ -104,9 +104,6 @@ nav button {
   font-weight: 500;
   padding: 10px 14px;
   outline: 0;
-}
-.btn-red-SI:hover {
-  /* background-color: rgba(214, 209, 209, 0); */
 }
 .btn-red-GS {
   background-color: red;
@@ -175,25 +172,83 @@ nav button {
   top: 82px;
   right: 59px;
 }
-/* #second {
-  color: white;
-  display: flex;
-  justify-content: center;
-  max-width: 75vw;
-  max-height: 54%;
-  position: relative;
-  z-index: -1;
-  margin: auto;
-  align-items: center;
-  overflow: hidden;
+
+#thirdimage video {
+  position: absolute;
+  z-index: 10;
 }
-#second > div :nth-child(1) {
-  font-size: 48px;
-  font-weight: 900;
+.questions {
   color: #ffffff;
+  padding: 34px;
 }
-#second > div :nth-child(2) {
+.questions h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+/* .box {
+  display: flex;
+  background-color: grey;
   font-size: 24px;
   font-weight: 400;
-  color: #ffffff;
+  padding: 22px;
+  width: 75%;
+  position: absolute;
+  right: 220px;
 } */
+.box {
+  cursor: pointer;
+  display: flex;
+  background-color: rgb(54, 54, 54);
+  padding: 24px;
+  max-width: 70vw;
+  margin: 34px auto;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 1s ease-out;
+}
+.box svg {
+  filter: invert(1);
+}
+.box:hover {
+  background-color: rgb(73, 73, 73);
+}
+footer {
+  max-width: 70vw;
+  color: white;
+  margin: auto;
+  padding: 50px 0;
+}
+/* footer span {
+  display: flex;
+  margin: 25px 0;
+} */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+}
+/* footer span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+} */
+.footquestion {
+  padding: 34px 0;
+}
+.footquestion {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+}
