@@ -58,13 +58,13 @@ nav button {
   padding: 0 30px;
 }
 #hero > :nth-child(1) {
-  font-size: 48px;
+  font-size: 3rem;
   color: #ffffff;
   font-weight: 900;
   text-align: center;
 }
 #hero > :nth-child(2) {
-  font-size: 48px;
+  font-size: 3rem;
   color: #ffffff;
   font-weight: 900;
   text-align: center;
@@ -136,24 +136,26 @@ nav button {
   color: white;
   display: flex;
   justify-content: center;
-  max-width: 75vw;
-  max-height: 54%;
+  max-width: 80vw;
+  /* max-height: 54%; */
   position: relative;
   z-index: -1;
   margin: auto;
   align-items: center;
   overflow: hidden;
 }
-.first div {
+
+section.first > div {
   display: flex;
   flex-direction: column;
+  margin: 34px 0;
 }
-.first > div :nth-child(1) {
-  font-size: 48px;
+section.first > div :nth-child(1) {
+  font-size: 3rem;
   font-weight: 900;
   color: #ffffff;
 }
-.first > div :nth-child(2) {
+section.first > div :nth-child(2) {
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
@@ -163,7 +165,7 @@ nav button {
   position: relative;
 }
 .firstimage img {
-  width: 40vw;
+  width: 555px;
   position: relative;
   z-index: 10;
 }
@@ -171,6 +173,7 @@ nav button {
   position: absolute;
   top: 82px;
   right: 59px;
+  /* width: 555px; */
 }
 
 #thirdimage video {
@@ -229,6 +232,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .footer-item {
   display: flex;
   flex-direction: column;
@@ -251,4 +255,41 @@ footer a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1300px) {
+  .first {
+    flex-wrap: wrap;
+    z-index: initial;
+  }
+  #hero > :nth-child(1) {
+    font-size: 32px;
+  }
+  #hero > :nth-child(2) {
+    font-size: 18px;
+  }
+  #hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+}
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .firstimage img {
+    width: 305px;
+    position: relative;
+    z-index: 10;
+  }
+  /* .firstimage video {
+    position: absolute;
+    top: 82px;
+    right: 59px;
+    width: 305px;
+  } */
 }
