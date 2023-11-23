@@ -180,12 +180,17 @@ body {
   }
   .nav .nav-1 {
     /* background-color: red; */
-    height: 62px;
+    height: 67px;
     overflow: hidden;
   }
   .nav .nav-1 svg {
     display: block;
-    height: 70px;
+    height: 67px;
+    width: 80px;
+  }
+  .nav .nav-1 #twogoodlogo{
+    height: 40px;
+    margin-left: -20px;
   }
   .nav .nav-2 {
     display: flex;
@@ -197,20 +202,14 @@ body {
     padding: 10px;
     display: none;
   }
-  .nav-2 .links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 400;
-    font-size: 14px;
-    margin: 0 20px;
-  }
+ 
   .icons {
-    padding: 10px;
+    padding: 7px;
     border-radius: 50px;
     background-color: #f7f7f7;
   }
   .nav-2 .icons i {
-    font-size: 18px;
+    font-size: 15px;
     margin: 0 20px;
     /* font-weight: 100; */
   }
