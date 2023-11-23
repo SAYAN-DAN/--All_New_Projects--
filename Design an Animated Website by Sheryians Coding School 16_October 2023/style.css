@@ -62,9 +62,9 @@ body {
   /* font-weight: 100; */
 }
 #cursor {
-  height: 150px;
-  width: 150px;
-  background-color: rgb(211, 215, 252);
+  height: 250px;
+  width: 250px;
+  background-color: rgb(221, 221, 221);
   border-radius: 50%;
   position: fixed;
   transform: translate(-50%, -50%) scale(0);
