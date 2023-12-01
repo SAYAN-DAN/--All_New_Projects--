@@ -148,7 +148,7 @@ nav button {
 section.first > div {
   display: flex;
   flex-direction: column;
-  margin: 34px 0;
+  padding: 34px 0;
 }
 section.first > div :nth-child(1) {
   font-size: 3rem;
@@ -256,8 +256,12 @@ footer a {
   font-size: 14px;
   font-weight: 400;
 }
+/* *********************************************************************** */
 
 @media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
   .first {
     flex-wrap: wrap;
     z-index: initial;
@@ -271,25 +275,34 @@ footer a {
   #hero > :nth-child(3) {
     font-size: 18px;
   }
-
-}
-@media screen and (max-width: 1300px) {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
   }
-}
-@media screen and (max-width: 1300px) {
-  .firstimage img {
-    width: 305px;
-    position: relative;
-    z-index: 10;
+  #hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
-  /* .firstimage video {
-    position: absolute;
-    top: 82px;
-    right: 59px;
+  .questions h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+  }
+  .footer {
+    max-width: 90vw;
+  }
+  .footer-item {
+    align-items: center;
+  }
+  /* .firstimage img {
+    width: 305px;
+  }
+  .firstimage video {
     width: 305px;
   } */
 }
