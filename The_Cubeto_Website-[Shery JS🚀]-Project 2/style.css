@@ -1,36 +1,125 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Matter Light";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Matter Light";
 }
-body,html {
-    width: 100%;
-    height: 100%
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
-#main{
-    width: 100%;
+#main {
+  width: 100%;
 }
 #home {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
-#nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 40px;
-    border-bottom: 2px solid red;
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 40px;
+  border-bottom: 2px solid red;
 }
 #nav #right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 #right a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3vw;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
 #nav img {
-    width: 100px;
+  width: 100px;
+}
+#nav i {
+  margin-top: 5px;
+  font-size: 1.4vw;
+}
+#home #homemain {
+  width: 100%;
+  padding: 15vw 15vw;
+}
+#homemain h1 {
+  font-weight: 900;
+  font-size: 1.34vw;
+  /* letter-spacing: -.1vw; */
+}
+#heading {
+  display: flex;
+  gap: 40px;
+}
+#homemain #heading h1 {
+  font-family: Roboto;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  font-size: 7vw;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+#homelast p {
+  width: 50%;
+  font-size: 1.3vw;
+  font-weight: 400;
+  letter-spacing: -0.08vw;
+}
+#homelast {
+  padding: 5vw 15vw;
+}
+p::selection {
+  background-color: #000;
+  color: #fff;
+}
+#featured {
+  padding: 10vw 15vw;
+}
+
+#fhead>h1 {
+  font-family: Matter;
+  line-height: 1;
+  font-size: 4vw;
+  font-weight: 400;
+}
+#fhead>h1:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+#fcontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+}
+#fleft {
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+    /* border: 1px solid blue; */
+}
+.fleftelem {
+    width: 100%;
+    height: inherit;
+    background-color: red;
+}
+#fright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+    /* border: 1px solid green; */
+}
+#fright .images {
+    width: 90%;
+    height: 90%;
+    background-color: red;
 }
