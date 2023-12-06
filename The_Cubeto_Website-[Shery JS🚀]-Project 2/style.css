@@ -5,6 +5,11 @@
   font-family: "Matter Light";
 }
 
+*::selection {
+  background-color: #000;
+  color: #fff;
+}
+
 body,
 html {
   width: 100%;
@@ -197,5 +202,5 @@ p::selection {
   width: 60%;
   font-size: 1.5vw;
   margin-top: 3vw;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
