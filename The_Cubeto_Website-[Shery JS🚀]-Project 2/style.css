@@ -31,7 +31,7 @@ html {
   justify-content: space-between;
   width: 100%;
   padding: 30px 40px;
-  border-bottom: 2px solid red;
+  /* border-bottom: 2px solid red; */
 }
 
 #nav #right {
@@ -71,6 +71,10 @@ html {
 #heading {
   display: flex;
   gap: 40px;
+}
+
+#homemain #heading h1:hover {
+  color: #000;
 }
 
 #homemain #heading h1 {
@@ -171,13 +175,18 @@ p::selection {
   background-color: red;
 }
 
-#fbutton {
+#fright .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fbutton {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#fbutton button {
+.fbutton button {
   padding: 1.5vw 2.5vw;
   border-radius: 100px;
   border: 2px solid #e6e6e6;
@@ -199,8 +208,106 @@ p::selection {
 }
 
 #dev p {
-  width: 60%;
+  width: 55%;
   font-size: 1.5vw;
   margin-top: 3vw;
   letter-spacing: -0.5px;
+}
+
+#slides {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 10vw;
+}
+
+.slide {
+  /* background-color: blanchedalmond; */
+  width: 30%;
+}
+
+.slide .img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: aqua;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide .tag {
+  margin: 20px 0;
+  padding: 10px 22px;
+  background-color: #f7f7f7;
+  width: fit-content;
+  border-radius: 100px;
+}
+
+.slide h3 {
+  font-size: 1.3vw;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+#days {
+  padding: 5vw 15vw;
+}
+#days h1 {
+  font-family: Matter;
+  font-size: 4vw;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+#daysimage {
+  width: 100%;
+  height: 400px;
+  padding: 5vw 2vw 5vw 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#img4 {
+  width: 24%;
+}
+
+#img5,
+#img7 {
+  width: 25%;
+}
+
+#img6 {
+  width: 24%;
+}
+
+#daysimage #img4 img {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#daysimage #img5 img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#daysimage #img6 img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#daysimage #img7 img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover;
 }

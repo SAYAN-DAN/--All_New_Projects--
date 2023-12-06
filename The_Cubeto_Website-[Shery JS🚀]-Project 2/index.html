@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuberto | Digital Product Agency</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="main">
-        <!-- <div id="home">
+        <div id="home">
             <div id="nav">
-                <img src="logo.png" alt="">
+                <img class="magnet" src="logo.png" alt="">
                   <div id="right">
                     <a href="#">our Showrell</a>
                     <a href="#">menu</a>
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars magnet"></i>
                   </div>
             </div>
             <div id="homemain">
                 <h1>We make it happen.</h1>
                 <div id="heading">
-                    <h1>Websites</h1>
-                    <h1>Apps</h1>
-                    <h1>Branding</h1>
+                    <h1 class="hvr">Websites</h1>
+                    <h1 class="hvr">Apps</h1>
+                    <h1 class="hvr">Branding</h1>
                 </div>
             </div>
             <div id="homelast">
                 <p>Leading Digital Agency with solid design and development expertise. We build readymade website,mobile application, and elaborate online business services.</p>
             </div>
-        </div> -->
-        <!-- <div id="featured">
+        </div>
+        <div id="featured">
             <div id="fhead">
                 <h1>featured</h1>
                 <h1>projects</h1>
@@ -52,25 +53,88 @@
                         <h1>official website riyadh, soudi arabia's capital</h1>
                         <h4>Design, Development,product</h4>
                     </div>
-                    <div class="fleftelem">
+                    <div class="fleftelem last">
                         <h3>Riyadh</h3>
                         <h1>official website riyadh, soudi arabia's capital</h1>
                         <h4>Design, Development,product</h4>
                     </div>
                 </div>
                 <div id="fright">
-                    <div class="images"></div>
+                    <div class="images">
+                        <img src="Images/img8.avif" alt="">
+                        <img src="Images/img9.avif" alt="">
+                        <img src="Images/img10.avif" alt="">
+                        <img src="Images/img11.avif" alt="">
+                    </div>
                 </div>
             </div>
-            <div id="fbutton">
+            <div class="fbutton">
                 <button>view all products</button>
             </div>
-        </div> -->
+        </div>
         <div id="dev">
             <h1>Development and design resources</h1>
             <p>We regularly release design courses, offer advice to newbie designers, walk you through creating awesome effects, and share source files.</p>
         </div>
+        <div id="slides">
+            <div class="slide">
+                <div class="img">
+                    <img src="Images/img1.png" alt="">
+                </div>
+                <div class="tag">Design Course</div>
+                <h3>How To Make Epic Website // Frontend development</h3>
+            </div>
+            <div class="slide">
+                <div class="img">
+                    <img src="Images/img2.png" alt="">
+                </div>
+                <div class="tag">Design Course</div>
+                <h3>Cuberto Mouse Follower</h3>
+            </div>
+            <div class="slide">
+                <div class="img">
+                    <img src="Images/img3.jpg" alt="">
+                </div>
+                <div class="tag">Design Course</div>
+                <h3>Making switch with SVG Distortion Effect</h3>
+            </div>
+        </div>
+        <div class="fbutton">
+            <button>view all resourses</button>
+        </div>
+
+        <div id="days">
+            <h1>New day-</h1>
+            <h1>new inspiro</h1>
+        </div>
+        <div id="daysimage">
+            <div id="img4">
+                <img src="Images/img4.jpg" alt="">
+            </div>
+            <div id="img5">
+                <img src="Images/img5.png" alt="">
+            </div>
+            <div id="img6">
+                <img src="Images/img6.png" alt="">
+            </div>
+            <div id="img7">
+                <img src="Images/img7.png" alt="">
+            </div>
+        </div>
     </div>
+
+    <!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+
+
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
     <script src="https://kit.fontawesome.com/299c99199c.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
