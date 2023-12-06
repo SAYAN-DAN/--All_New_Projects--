@@ -4,18 +4,22 @@
   box-sizing: border-box;
   font-family: "Matter Light";
 }
+
 body,
 html {
   width: 100%;
   height: 100%;
 }
+
 #main {
   width: 100%;
 }
+
 #home {
   width: 100%;
   height: 100vh;
 }
+
 #nav {
   display: flex;
   align-items: center;
@@ -24,11 +28,13 @@ html {
   padding: 30px 40px;
   border-bottom: 2px solid red;
 }
+
 #nav #right {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 #right a {
   text-decoration: none;
   color: #000;
@@ -36,26 +42,32 @@ html {
   font-weight: 400;
   letter-spacing: -1px;
 }
+
 #nav img {
   width: 100px;
 }
+
 #nav i {
   margin-top: 5px;
   font-size: 1.4vw;
 }
+
 #home #homemain {
   width: 100%;
   padding: 15vw 15vw;
 }
+
 #homemain h1 {
   font-weight: 900;
   font-size: 1.34vw;
   /* letter-spacing: -.1vw; */
 }
+
 #heading {
   display: flex;
   gap: 40px;
 }
+
 #homemain #heading h1 {
   font-family: Roboto;
   color: transparent;
@@ -65,61 +77,125 @@ html {
   line-height: 1;
   letter-spacing: -2px;
 }
+
 #homelast p {
   width: 50%;
   font-size: 1.3vw;
   font-weight: 400;
   letter-spacing: -0.08vw;
 }
+
 #homelast {
   padding: 5vw 15vw;
 }
+
 p::selection {
   background-color: #000;
   color: #fff;
 }
+
 #featured {
   padding: 10vw 15vw;
 }
 
-#fhead>h1 {
+#fhead > h1 {
   font-family: Matter;
   line-height: 1;
   font-size: 4vw;
   font-weight: 400;
 }
-#fhead>h1:nth-child(2) {
+
+#fhead > h1:nth-child(2) {
   color: transparent;
   -webkit-text-stroke: 1px #000;
 }
+
 #fcontainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100vh;
-    margin-top: 5vw;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  margin-top: 5vw;
 }
+
 #fleft {
-    overflow: hidden;
-    width: 45%;
-    height: inherit;
-    /* border: 1px solid blue; */
+  overflow: hidden;
+  width: 45%;
+  height: inherit;
+  /* border: 1px solid blue; */
 }
+
 .fleftelem {
-    width: 100%;
-    height: inherit;
-    background-color: red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+  /* background-color: red; */
 }
+
+.fleftelem h1 {
+  font-size: 2.5vw;
+  text-transform: capitalize;
+  line-height: 1;
+  font-weight: 400;
+  margin: 1.5vw 0;
+}
+
+.fleftelem h4 {
+  opacity: 0.5;
+}
+
+.fleftelem h3 {
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
 #fright {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 45%;
-    height: inherit;
-    /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 45%;
+  height: inherit;
+  /* border: 1px solid green; */
 }
+
 #fright .images {
-    width: 90%;
-    height: 90%;
-    background-color: red;
+  width: 90%;
+  height: 90%;
+  background-color: red;
+}
+
+#fbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fbutton button {
+  padding: 1.5vw 2.5vw;
+  border-radius: 100px;
+  border: 2px solid #e6e6e6;
+  background-color: #fff;
+  font-size: 1vw;
+  font-weight: 900;
+}
+
+#dev {
+  width: 100%;
+  padding: 5vw 15vw;
+}
+
+#dev h1 {
+  width: 60%;
+  font-size: 3.8vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+#dev p {
+  width: 60%;
+  font-size: 1.5vw;
+  margin-top: 3vw;
+  letter-spacing: -.5px;
 }
