@@ -128,12 +128,131 @@ nav h3 {
 }
 
 .page3 {
+  background-color: #faf8f3;
   width: 100%;
   min-height: 100vh;
   position: relative;
   padding: 3vw;
 }
-.page3-top{
-  background-color: red;
+
+.page3-top {
+  /* background-color: red; */
   text-align: center;
+}
+
+.page3-top h4 {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+.page3-top h2 {
+  font-size: 4vw;
+  font-weight: 400;
+}
+
+.page3-top h4 span {
+  font-size: 0.7vw;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 10px ;
+  border-radius: 10px;
+}
+
+.page3-element {
+  /* background-color: pink; */
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8vw;
+}
+
+.page3-element .box {
+ width: 33%;
+ height: 100%;
+ background-color: blue;
+ position: relative;
+}
+
+.page3-element .box  video  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.page3-element .box  img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  object-position: center;
+  transition: all linear 0.6 s;
+}
+.page3-element .box:hover img {
+  opacity: 0;
+}
+
+#page4 {
+  background-color: #faf8f3;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page4 video {
+  height: 100%;
+}
+
+#page4 svg {
+  position: absolute;
+  height: 65%;
+}
+
+#page5 {
+  height: 100vh;
+  width: 100%;
+  padding: 3vw 0;
+}
+.page5-top h1 {
+ font-family: Rejouice;
+ font-size: 10vw;
+ font-weight: 100;
+ border-bottom: 1px solid #000000dd;
+ /* background-color: red; */
+ width: 96%;
+ margin-left: 2%;
+}
+
+.swiperdiv {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
