@@ -1,3 +1,5 @@
+// *****************************************************************
+
 function locomotivescroll() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -37,8 +39,9 @@ function locomotivescroll() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
 }
-
 locomotivescroll();
+
+// ***********************************************************************
 
 function playEffect() {
   var page1 = document.querySelector(".page1-container");
@@ -60,12 +63,14 @@ function playEffect() {
 
   page1.addEventListener("mousemove", function (dets) {
     gsap.to(play, {
-      x: dets.x-60,
-      y: dets.y-60,
+      x: dets.x - 60,
+      y: dets.y - 60,
     });
   });
 }
 playEffect();
+
+// **********************************************************************
 
 // function page2Animation() {
 //   gsap.from(".elem h1", {
@@ -93,7 +98,7 @@ function page2Animation() {
       trigger: ".page2",
       scroller: "#main",
       start: "top 90%", // Adjust the start value
-      end: "top 10%",   // Adjust the end value
+      end: "top 10%", // Adjust the end value
       // markers: true,
       scrub: 2,
     },
@@ -101,16 +106,83 @@ function page2Animation() {
 }
 page2Animation();
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// *************************************************************
+
+function page3Animation() {
+  gsap.from(".page3-top h2", {
+    y: 100,
+    stagger: 0.2,
+    duration: 1,
+    opacity: 0,
+    scale: 0,
+    scrollTrigger: {
+      trigger: ".page3",
+      scroller: "#main",
+      start: "top 80%", // Adjust the start value
+      end: "top 50%", // Adjust the end value
+      // markers: true,
+      scrub: 2,
+    },
+  });
+}
+page3Animation();
+
+// ******************************************************************
+
+function page4part1() {
+  gsap.from(".page4part1 h2", {
+    y:100,
+    stagger: 0.2,
+    duration: 1,
+    opacity: 0,
+    scale: 0,
+    scrollTrigger: {
+      trigger: "#page4",
+      scroller: "#main",
+      start: "top 90%", // Adjust the start value
+      end: "top 70%", // Adjust the end value
+      // markers: true,
+      scrub: 2,
+    },
+  });
+}
+page4part1();
+
+// ****************************************************************
+
+function page4Animation() {
+  gsap.from(".page4elem h1", {
+    y: 200,
+    stagger: 0.2,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#page4",
+      scroller: "#main",
+      start: "top 90%", // Adjust the start value
+      end: "top 10%", // Adjust the end value
+      markers: true,
+      scrub: 2,
+    },
+  });
+}
+page4Animation();
+
+// ***************************************************************
+
+function swiperJS() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+
+swiperJS();

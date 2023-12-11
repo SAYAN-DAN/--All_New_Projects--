@@ -19,6 +19,7 @@ body {
   height: 100%;
 }
 
+/* ********************************************************************* */
 #page1 {
   width: 100%;
   height: 100vh;
@@ -88,6 +89,8 @@ nav h3 {
   font-weight: 500;
 }
 
+/* ************************************************************************ */
+
 .page2 {
   width: 100%;
   background-color: #faf8f3;
@@ -127,6 +130,8 @@ nav h3 {
   font-weight: 500;
 }
 
+/* ************************************************************************ */
+
 .page3 {
   background-color: #faf8f3;
   width: 100%;
@@ -148,6 +153,8 @@ nav h3 {
 .page3-top h2 {
   font-size: 4vw;
   font-weight: 400;
+  opacity: 1;
+  scale: 1;
 }
 
 .page3-top h4 span {
@@ -156,6 +163,25 @@ nav h3 {
   color: #fff;
   padding: 4px 10px ;
   border-radius: 10px;
+}
+
+.page3-top2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 108px;
+}
+
+.page3-top2 h2 {
+  font-weight: 400;
+  font-size: 1.7vw;
+  letter-spacing: -0.9px;
+}
+
+.page3-top2 h2 span:hover {
+  border-bottom: 1px solid #000000dd;
+  cursor: pointer;
 }
 
 .page3-element {
@@ -193,22 +219,54 @@ nav h3 {
   opacity: 0;
 }
 
+/* *********************************************************************** */
+
 #page4 {
   background-color: #faf8f3;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+}
+
+.page4part1 h2  {
+  font-weight: 100;
+  font-size: 1.9vw;
+  opacity: 1;
+  transform: scaleX(1); /* Corrected property */
+}
+
+.page4part1 {
+  /* background-color: red; */
+  width: 96%;
+  margin-left: 2%;
+  padding-bottom: 1vw;
+  border-bottom: 1px solid  #000000dd;
+}
+
+.page4elem {
+  margin-top: 2vw;
+  padding: 0 2vw;
+  margin-bottom: 6vw;
+}
+.page4elem h1 {
+  font-size: 4.2vw;
+  font-weight: 500;
+}
+.page4video {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
+
 #page4 video {
   height: 100%;
+  width: 60%;
 }
 
 #page4 svg {
   position: absolute;
-  height: 65%;
+  height: 40%;
+  top: 43vw;
 }
 
 #page5 {
@@ -216,6 +274,7 @@ nav h3 {
   width: 100%;
   padding: 3vw 0;
 }
+
 .page5-top h1 {
  font-family: Rejouice;
  font-size: 10vw;
