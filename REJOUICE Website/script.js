@@ -160,7 +160,7 @@ function page4Animation() {
       scroller: "#main",
       start: "top 90%", // Adjust the start value
       end: "top 10%", // Adjust the end value
-      markers: true,
+      // markers: true,
       scrub: 2,
     },
   });
@@ -174,15 +174,50 @@ function swiperJS() {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
   });
 }
 
 swiperJS();
+
+
+var tl = gsap.timeline();
+
+tl.from("#loader h3", {
+  x: 80,
+  delay: 1,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+});
+
+tl.to("#loader h3", {
+  opacity: 0,
+  x:-40,
+  stagger:0.1
+});
+
+tl.to("#loader", {
+  opacity: 0,
+});
+tl.from(".page1-container h1 span", {
+  y:100,
+  opacity:0,
+  stagger:0.1,
+  duration:0.5,
+});
+tl.to("#loader", {
+  display:"none"
+});
+
